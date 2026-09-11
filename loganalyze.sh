@@ -16,3 +16,6 @@ fi
 
 echo "$dir"
 
+#now look for log files in dir
+files=$(find "$dir" -mindepth 1 -maxdepth 1 -type f -name "*log" -mtime -7)
+
